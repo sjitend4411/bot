@@ -5,7 +5,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 # --- Configure Gemini ---
-genai.configure(api_key="YOUR_GEMINI_API_KEY")
+genai.configure(api_key="AIzaSyAbyk4r2SfZJelOq2u2DL1ll87kF2Dteag")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # --- Text to speech ---
@@ -47,7 +47,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # --- Telegram bot runner ---
 def run_telegram_bot():
-    application = ApplicationBuilder().token("YOUR_TELEGRAM_BOT_TOKEN").build()
+    application = ApplicationBuilder().token("7616675073:AAGoV2rIXkaBDyzCK2P5X50VPnZZpPqMbuU").build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     print("Telegram bot is running...")
