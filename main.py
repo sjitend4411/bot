@@ -54,7 +54,7 @@ def run_telegram_bot():
     application.run_polling()
 
 # --- Main menu ---
-if name == "main":
+if _name_ == "_main_":
     print("Choose mode:")
     print("1. Voice Assistant")
     print("2. Telegram Bot")
